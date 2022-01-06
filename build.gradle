@@ -72,4 +72,4 @@ subprojects {
 
 }
 
-test.dependsOn([':core:test', ':prov:test'])
+test.dependsOn([':core:test', ':util:test'])

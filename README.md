@@ -1,6 +1,6 @@
 # The Bouncy Castle Crypto Package For Java, but less
 
-Forked from the most incomprehensible repo I've seen so far, I present that same repo if you removed 90% of it!
+Forked from the giant bouncy castle repo, I present that same repo if you removed 90% of it!
 
 # What's gone
 
