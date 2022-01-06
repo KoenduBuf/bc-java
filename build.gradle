@@ -6,10 +6,6 @@ buildscript {
     }
 }
 
-plugins {
-    id "io.spring.nohttp" version "0.0.8"
-}
-
 if (JavaVersion.current().isJava8Compatible()) {
     allprojects {
         tasks.withType(Javadoc) {
@@ -17,9 +13,6 @@ if (JavaVersion.current().isJava8Compatible()) {
         }
     }
 }
-
-// this needs to go here, otherwise it can't find config
-apply plugin: 'io.spring.nohttp'
 
 allprojects {
     apply plugin: 'java'
@@ -68,8 +61,6 @@ subprojects {
             includeTestsMatching "AllTest*"
         }
     }
-
-
 }
 
 test.dependsOn([':core:test', ':util:test'])
